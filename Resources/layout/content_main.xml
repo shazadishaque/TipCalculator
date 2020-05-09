@@ -9,10 +9,13 @@
     tools:showIn="@layout/activity_main">
 
     <EditText
+        android:id="@+id/inputBill"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"/>
 
     <Button
+        android:id="@+id/calculateButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="CALCULATE"/>
@@ -25,10 +28,12 @@
         android:layout_height="wrap_content"
         android:id="@+id/linearLayout1" >
         <TextView
-            android:text="Tip"
+            android:layout_marginRight="20dp"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"            
+            android:text="Tip" />
         <TextView
+            android:id="@+id/outputTip"
             android:layout_width="wrap_content"
             android:layout_height="match_parent" />
     </LinearLayout>
@@ -41,10 +46,12 @@
         android:layout_height="wrap_content"
         android:id="@+id/linearLayout2" >
         <TextView
-            android:text="Total"
+            android:layout_marginRight="20dp"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"            
+            android:text="Total" />
         <TextView
+            android:id="@+id/outputTotal"
             android:layout_width="wrap_content"
             android:layout_height="match_parent" />
     </LinearLayout>
